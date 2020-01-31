@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>open.source.framework</groupId>
+        <artifactId>framework-upms</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>framework-upms-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <description>framework 通用用户权限管理系统业务处理模块</description>
+
+    <dependencies>
+        <!--upms api、model 模块-->
+        <dependency>
+            <groupId>open.source.framework</groupId>
+            <artifactId>framework-upms-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--安全模块-->
+        <dependency>
+            <groupId>open.source.framework</groupId>
+            <artifactId>framework-common-security</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--日志处理-->
+        <dependency>
+            <groupId>open.source.framework</groupId>
+            <artifactId>framework-common-log</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--接口文档-->
+        <dependency>
+            <groupId>open.source.framework</groupId>
+            <artifactId>framework-common-swagger</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--注册中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <!--数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

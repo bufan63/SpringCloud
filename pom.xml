@@ -65,6 +65,7 @@
         <security.oauth.version>2.4.0.RELEASE</security.oauth.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <mybatis-plus.version>3.3.0</mybatis-plus.version>
         <hutool.version>5.0.5</hutool.version>
         <kaptcha.version>0.0.9</kaptcha.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
@@ -282,6 +283,8 @@
 
     <modules>
         <module>framework-gateway</module>
+        <module>framework-common</module>
+        <module>framework-upms</module>
     </modules>
 
 </project>

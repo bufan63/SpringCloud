@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>open.source.framework</groupId>
+		<artifactId>framework-common</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>framework-common-security</artifactId>
+	<packaging>jar</packaging>
+
+	<description>pmsf 安全工具类</description>
+
+	<dependencies>
+		<!--工具类核心包-->
+		<dependency>
+			<groupId>open.source.framework</groupId>
+			<artifactId>framework-common-core</artifactId>
+		</dependency>
+		<!--安全模块 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-oauth2</artifactId>
+		</dependency>
+		<!-- 二维码 QRcode -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>${zxing.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>com.google.zxing</groupId>
+		<artifactId>javase</artifactId>
+		<version>${zxing.version}</version>
+	</dependency>
+<!--		UPMS API-->
+		<dependency>
+			<groupId>open.source.framework</groupId>
+			<artifactId>framework-upms-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
