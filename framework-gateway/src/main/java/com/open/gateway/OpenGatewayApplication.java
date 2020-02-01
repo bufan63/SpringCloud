@@ -7,7 +7,6 @@ import org.springframework.cloud.client.SpringCloudApplication;
 /**
  * @author 刘念
  * @date 2020年1月30日14:48:03
- * <p>
  * 网关应用
  */
 @SpringCloudApplication
