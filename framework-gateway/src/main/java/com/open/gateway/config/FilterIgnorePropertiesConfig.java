@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author liul
- * @date 2018/7/22
  * 网关不校验终端配置
  */
 @Data

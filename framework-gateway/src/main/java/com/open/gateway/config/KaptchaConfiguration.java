@@ -2,7 +2,7 @@ package com.open.gateway.config;
 
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
-import com.petecc.pmsf.common.core.constant.SecurityConstants;
+import com.open.common.core.constant.SecurityConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

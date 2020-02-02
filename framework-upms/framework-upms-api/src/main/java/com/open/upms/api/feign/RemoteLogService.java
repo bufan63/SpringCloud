@@ -16,11 +16,11 @@
 
 package com.open.upms.api.feign;
 
-import com.pig4cloud.pig.admin.api.entity.SysLog;
-import com.pig4cloud.pig.admin.api.feign.factory.RemoteLogServiceFallbackFactory;
-import com.pig4cloud.pig.common.core.constant.SecurityConstants;
-import com.pig4cloud.pig.common.core.constant.ServiceNameConstants;
-import com.pig4cloud.pig.common.core.util.R;
+import com.open.upms.api.entity.SysLog;
+import com.open.upms.api.feign.factory.RemoteLogServiceFallbackFactory;
+import com.open.common.core.constant.SecurityConstants;
+import com.open.common.core.constant.ServiceNameConstants;
+import com.open.common.core.util.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
