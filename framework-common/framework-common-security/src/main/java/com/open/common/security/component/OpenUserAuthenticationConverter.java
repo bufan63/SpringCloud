@@ -1,23 +1,7 @@
-/*
- *  Copyright (c) 2019-2020, 冷冷 (wangiegie@gmail.com).
- *  <p>
- *  Licensed under the GNU Lesser General Public License 3.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *  <p>
- * https://www.gnu.org/licenses/lgpl.html
- *  <p>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.open.common.security.component;
 
-import com.pig4cloud.pig.common.core.constant.SecurityConstants;
-import com.pig4cloud.pig.common.security.service.PigUser;
+import com.open.common.core.constant.SecurityConstants;
+import com.open.common.security.service.OpenUser;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -30,9 +14,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * @author lengleng
- * @date 2019-03-07
- * <p>
  * 根据checktoken 的结果转化用户信息
  */
 public class OpenUserAuthenticationConverter implements UserAuthenticationConverter {
@@ -68,7 +49,7 @@ public class OpenUserAuthenticationConverter implements UserAuthenticationConver
 			String username = (String) map.get(SecurityConstants.DETAILS_USERNAME);
 			Integer id = (Integer) map.get(SecurityConstants.DETAILS_USER_ID);
 			Integer deptId = (Integer) map.get(SecurityConstants.DETAILS_DEPT_ID);
-			PigUser user = new PigUser(id, deptId, username, N_A, true
+			OpenUser user = new OpenUser(id, deptId, username, N_A, true
 				, true, true, true, authorities);
 			return new UsernamePasswordAuthenticationToken(user, N_A, authorities);
 		}

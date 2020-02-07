@@ -28,7 +28,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.a
  * 支持swagger添加X-Forwarded-Prefix header  （F SR2 已经支持，不需要自己维护）
  */
 @Component
-public class PmsfRequestGlobalFilter implements GlobalFilter, Ordered {
+public class OpenRequestGlobalFilter implements GlobalFilter, Ordered {
 
 	/**
 	 * Process the Web request and (optionally) delegate to the next

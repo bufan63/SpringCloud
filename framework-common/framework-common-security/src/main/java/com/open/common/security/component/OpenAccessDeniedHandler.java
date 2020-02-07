@@ -4,7 +4,7 @@ package com.open.common.security.component;
 import cn.hutool.http.HttpStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.open.common.core.constant.CommonConstants;
-import com.open.common.core.exception.PigDeniedException;
+import com.open.common.core.exception.OpenDeniedException;
 import com.open.common.core.util.R;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -40,7 +40,7 @@ public class OpenAccessDeniedHandler extends OAuth2AccessDeniedHandler {
 		log.info("授权失败，禁止访问 {}", request.getRequestURI());
 		response.setCharacterEncoding(CommonConstants.UTF8);
 		response.setContentType(CommonConstants.CONTENT_TYPE);
-		R<PigDeniedException> result = R.failed(new PigDeniedException("授权失败，禁止访问"));
+		R<OpenDeniedException> result = R.failed(new OpenDeniedException("授权失败，禁止访问"));
 		response.setStatus(HttpStatus.HTTP_FORBIDDEN);
 		PrintWriter printWriter = response.getWriter();
 		printWriter.append(objectMapper.writeValueAsString(result));

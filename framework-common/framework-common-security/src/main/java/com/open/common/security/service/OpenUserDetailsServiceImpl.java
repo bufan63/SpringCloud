@@ -1,4 +1,3 @@
-
 package com.open.common.security.service;
 
 import cn.hutool.core.util.ArrayUtil;

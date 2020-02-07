@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author Sywd
  * 聚合接口文档注册，和zuul实现类似
  */
 @Component

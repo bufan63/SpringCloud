@@ -1,4 +1,3 @@
-
 package com.open.common.security.feign;
 
 import feign.RequestInterceptor;

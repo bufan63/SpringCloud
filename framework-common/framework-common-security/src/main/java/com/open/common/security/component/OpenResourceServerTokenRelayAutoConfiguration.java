@@ -1,4 +1,3 @@
-
 package com.open.common.security.component;
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;

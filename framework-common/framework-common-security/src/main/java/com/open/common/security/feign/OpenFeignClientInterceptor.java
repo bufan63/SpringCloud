@@ -1,8 +1,7 @@
-
 package com.open.common.security.feign;
 
 import cn.hutool.core.collection.CollUtil;
-import com.pig4cloud.pig.common.core.constant.SecurityConstants;
+import com.open.common.core.constant.SecurityConstants;
 import feign.RequestTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.security.oauth2.client.AccessTokenContextRelay;

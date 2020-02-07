@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
- * 开启pig swagger
+ * 开启 swagger
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
 @Import({SwaggerAutoConfiguration.class})
-public @interface EnablePigSwagger2 {
+public @interface EnableOpenSwagger2 {
 }

@@ -1,6 +1,6 @@
 package com.open.gateway.config;
 
-import com.petecc.pmsf.gateway.handler.*;
+import com.open.gateway.handler.*;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
@@ -11,8 +11,6 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 
 /**
- * @author liul
- * @date 2018/7/5
  * 路由配置信息
  */
 @Slf4j

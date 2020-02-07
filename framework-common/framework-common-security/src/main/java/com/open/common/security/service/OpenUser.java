@@ -1,4 +1,3 @@
-
 package com.open.common.security.service;
 
 import lombok.Getter;

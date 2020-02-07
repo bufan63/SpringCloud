@@ -1,4 +1,3 @@
-
 package com.open.common.security.component;
 
 import lombok.SneakyThrows;
@@ -15,7 +14,6 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * <p>
  * 1. 支持remoteTokenServices 负载均衡
  * 2. 支持 获取用户全部信息
  */

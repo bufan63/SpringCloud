@@ -6,8 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.Mono;
 
 /**
- * @author liul
- * @date 2018/7/1
  * 路由限流配置
  */
 @Configuration

@@ -1,4 +1,3 @@
-
 package com.open.common.security.handler;
 
 import cn.hutool.http.HttpUtil;
