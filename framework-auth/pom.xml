@@ -12,7 +12,7 @@
     <artifactId>framework-auth</artifactId>
     <packaging>jar</packaging>
 
-    <description>pmsf 认证授权中心，基于 spring security oAuth2</description>
+    <description>framework 认证授权中心，基于 spring security oAuth2</description>
 
     <dependencies>
         <!--注册中心客户端-->
@@ -29,11 +29,13 @@
         <dependency>
             <groupId>open.source.framework</groupId>
             <artifactId>framework-upms-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--security-->
         <dependency>
             <groupId>open.source.framework</groupId>
             <artifactId>framework-common-security</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--mysql 驱动-->
         <dependency>
@@ -44,11 +46,13 @@
 <!--        <dependency>-->
 <!--            <groupId>open.source.framework</groupId>-->
 <!--            <artifactId>framework-common-data</artifactId>-->
+<!--        <version>1.0-SNAPSHOT</version>-->
 <!--        </dependency>-->
 <!--        &lt;!&ndash;sentinel 依赖&ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>open.source.framework</groupId>-->
 <!--            <artifactId>framework-common-sentinel</artifactId>-->
+<!--        <version>1.0-SNAPSHOT</version>-->
 <!--        </dependency>-->
         <!--JDBC相关-->
         <dependency>
@@ -59,6 +63,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.21</version>
         </dependency>
         <!--freemarker-->
         <dependency>
@@ -84,10 +89,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>com.spotify</groupId>-->
-<!--                <artifactId>docker-maven-plugin</artifactId>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
 
