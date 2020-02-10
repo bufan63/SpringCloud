@@ -21,10 +21,6 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author lengleng
- * @date 2017年11月9日23:33:45
- */
 @Data
 public class TreeNode {
 	protected int id;

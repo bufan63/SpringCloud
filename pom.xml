@@ -276,6 +276,7 @@
         <module>framework-gateway</module>
         <module>framework-common</module>
         <module>framework-upms</module>
+        <module>framework-monitor</module>
     </modules>
 
 </project>

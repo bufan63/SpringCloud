@@ -1,10 +1,10 @@
 package com.open.auth.config;
 
 import com.open.common.core.constant.CacheConstants;
-import com.op.common.core.constant.SecurityConstants;
-import com.pig4cloud.pig.common.security.component.PigWebResponseExceptionTranslator;
-import com.pig4cloud.pig.common.security.service.PigClientDetailsService;
-import com.pig4cloud.pig.common.security.service.PigUser;
+import com.open.common.core.constant.SecurityConstants;
+import com.open.common.security.component.OpenWebResponseExceptionTranslator;
+import com.open.common.security.service.OpenClientDetailsService;
+import com.open.common.security.service.OpenUser;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
