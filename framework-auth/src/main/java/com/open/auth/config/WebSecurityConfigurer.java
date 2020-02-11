@@ -16,7 +16,7 @@
 
 package com.open.auth.config;
 
-import com.pig4cloud.pig.common.security.handler.FormAuthenticationFailureHandler;
+import com.open.common.security.handler.FormAuthenticationFailureHandler;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,8 +30,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 
 /**
- * @author lengleng
- * @date 2019/2/1
  * 认证相关配置
  */
 @Primary

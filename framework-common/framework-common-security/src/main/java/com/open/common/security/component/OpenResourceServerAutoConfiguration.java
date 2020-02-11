@@ -12,7 +12,7 @@ import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
 @ConfigurationPropertiesScan
-@ComponentScan("com.pig4cloud.pig.common.security")
+@ComponentScan("com.open.common.security")
 public class OpenResourceServerAutoConfiguration {
 	@Bean
 	@Primary

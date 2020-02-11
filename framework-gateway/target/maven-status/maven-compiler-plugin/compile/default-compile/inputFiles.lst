@@ -1,0 +1,16 @@
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\handler\SwaggerSecurityHandler.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\config\KaptchaConfiguration.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\config\RateLimiterConfiguration.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\filter\OpenRequestGlobalFilter.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\filter\PreviewGatewayFilter.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\handler\HystrixFallbackHandler.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\handler\ImageCodeHandler.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\filter\PasswordDecoderFilter.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\config\RouterFunctionConfiguration.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\OpenGatewayApplication.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\filter\HttpBasicGatewayFilter.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\handler\SwaggerResourceHandler.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\config\SwaggerProvider.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\filter\ValidateCodeGatewayFilter.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\handler\SwaggerUiHandler.java
+D:\workspace\framework\framework-gateway\src\main\java\com\open\gateway\config\FilterIgnorePropertiesConfig.java

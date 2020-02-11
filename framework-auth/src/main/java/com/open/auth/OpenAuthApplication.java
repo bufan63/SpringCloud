@@ -1,7 +1,7 @@
 package com.open.auth;
 
 
-import com.pig4cloud.pig.common.security.annotation.EnablePigFeignClients;
+import com.open.common.security.annotation.EnableOpenFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * mybatis 设置
  */
 @Configuration
-@MapperScan("com.pig4cloud.pig.admin.mapper")
+@MapperScan("com.open.upms.biz.mapper")
 public class MybatisPlusConfigurer {
 	/**
 	 * 分页插件

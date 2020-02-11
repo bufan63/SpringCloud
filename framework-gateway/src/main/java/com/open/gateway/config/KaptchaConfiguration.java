@@ -5,13 +5,8 @@ import com.google.code.kaptcha.util.Config;
 import com.open.common.core.constant.SecurityConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import java.util.Properties;
 
-/**
- * @author liul
- * @date 2017-12-21 21:12:18
- */
 @Configuration
 public class KaptchaConfiguration {
 

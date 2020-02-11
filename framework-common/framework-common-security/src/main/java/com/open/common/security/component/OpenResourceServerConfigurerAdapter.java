@@ -24,7 +24,7 @@ public class OpenResourceServerConfigurerAdapter extends ResourceServerConfigure
 	@Autowired
 	protected RemoteTokenServices remoteTokenServices;
 	@Autowired
-	private AccessDeniedHandler pigAccessDeniedHandler;
+	private AccessDeniedHandler AccessDeniedHandler;
 	@Autowired
 	private PermitAllUrlConfiguration permitAllUrl;
 	@Autowired
@@ -58,7 +58,7 @@ public class OpenResourceServerConfigurerAdapter extends ResourceServerConfigure
 		remoteTokenServices.setRestTemplate(lbRestTemplate);
 		remoteTokenServices.setAccessTokenConverter(accessTokenConverter);
 		resources.authenticationEntryPoint(resourceAuthExceptionEntryPoint)
-			.accessDeniedHandler(pigAccessDeniedHandler)
+			.accessDeniedHandler(AccessDeniedHandler)
 			.tokenServices(remoteTokenServices);
 	}
 }

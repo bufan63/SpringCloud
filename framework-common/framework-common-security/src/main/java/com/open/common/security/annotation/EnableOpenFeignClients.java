@@ -28,7 +28,7 @@ public @interface EnableOpenFeignClients {
 	 *
 	 * @return the array of 'basePackages'.
 	 */
-	String[] basePackages() default {"com.pig4cloud.pig"};
+	String[] basePackages() default {"com.open"};
 
 	/**
 	 * Type-safe alternative to {@link #basePackages()} for specifying the packages to

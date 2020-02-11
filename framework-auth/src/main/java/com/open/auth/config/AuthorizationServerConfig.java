@@ -42,7 +42,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Override
 	@SneakyThrows
 	public void configure(ClientDetailsServiceConfigurer clients) {
-		PigClientDetailsService clientDetailsService = new PigClientDetailsService(dataSource);
+		OpenClientDetailsService clientDetailsService = new OpenClientDetailsService(dataSource);
 		clientDetailsService.setSelectClientDetailsSql(SecurityConstants.DEFAULT_SELECT_STATEMENT);
 		clientDetailsService.setFindClientDetailsSql(SecurityConstants.DEFAULT_FIND_STATEMENT);
 		clients.withClientDetails(clientDetailsService);
@@ -65,7 +65,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 			.authenticationManager(authenticationManager)
 			.reuseRefreshTokens(false)
 			.pathMapping("/oauth/confirm_access", "/token/confirm_access")
-			.exceptionTranslator(new PigWebResponseExceptionTranslator());
+			.exceptionTranslator(new OpenWebResponseExceptionTranslator());
 	}
 
 	@Bean
@@ -79,11 +79,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	public TokenEnhancer tokenEnhancer() {
 		return (accessToken, authentication) -> {
 			final Map<String, Object> additionalInfo = new HashMap<>(4);
-			PigUser pigUser = (PigUser) authentication.getUserAuthentication().getPrincipal();
+			OpenUser openUser = (OpenUser) authentication.getUserAuthentication().getPrincipal();
 			additionalInfo.put(SecurityConstants.DETAILS_LICENSE, SecurityConstants.PROJECT_LICENSE);
-			additionalInfo.put(SecurityConstants.DETAILS_USER_ID, pigUser.getId());
-			additionalInfo.put(SecurityConstants.DETAILS_USERNAME, pigUser.getUsername());
-			additionalInfo.put(SecurityConstants.DETAILS_DEPT_ID, pigUser.getDeptId());
+			additionalInfo.put(SecurityConstants.DETAILS_USER_ID, openUser.getId());
+			additionalInfo.put(SecurityConstants.DETAILS_USERNAME, openUser.getUsername());
+			additionalInfo.put(SecurityConstants.DETAILS_DEPT_ID, openUser.getDeptId());
 			((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
 			return accessToken;
 		};

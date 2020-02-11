@@ -1,7 +1,6 @@
 package com.open.gateway;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.cloud.client.SpringCloudApplication;
 
 /**
@@ -10,7 +9,6 @@ import org.springframework.cloud.client.SpringCloudApplication;
  * 网关应用
  */
 @SpringCloudApplication
-@ConfigurationPropertiesScan
 public class OpenGatewayApplication {
 
     public static void main(String[] args) {

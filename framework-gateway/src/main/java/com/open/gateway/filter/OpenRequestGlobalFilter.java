@@ -1,6 +1,6 @@
 package com.open.gateway.filter;
 
-import com.petecc.pmsf.common.core.constant.SecurityConstants;
+import com.open.common.core.constant.SecurityConstants;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -17,14 +17,11 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.G
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.addOriginalRequestUrl;
 
 /**
- * @author liul
- * @date 2018/10/8
- * <p>
  * 全局拦截器，作用所有的微服务
- * <p>
+
  * 1. 对请求头中参数进行处理 from 参数进行清洗
  * 2. 重写StripPrefix = 1,支持全局
- * <p>
+
  * 支持swagger添加X-Forwarded-Prefix header  （F SR2 已经支持，不需要自己维护）
  */
 @Component

@@ -8,12 +8,12 @@ public interface SecurityConstants {
 	/**
 	 * 前缀
 	 */
-	String PROJECT_PREFIX = "pig_";
+	String PROJECT_PREFIX = "open_";
 
 	/**
 	 * 项目的license
 	 */
-	String PROJECT_LICENSE = "made by pig";
+	String PROJECT_LICENSE = "made by bufan";
 
 	/**
 	 * 内部
@@ -24,7 +24,10 @@ public interface SecurityConstants {
 	 * 标志
 	 */
 	String FROM = "from";
-
+	/**
+	 * 验证码长度
+	 */
+	String CODE_SIZE = "4";
 
 	/**
 	 * 默认登录URL
