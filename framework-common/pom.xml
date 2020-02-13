@@ -17,5 +17,9 @@
 		<module>framework-common-log</module>
 		<module>framework-common-security</module>
 		<module>framework-common-swagger</module>
+		<module>framework-common-data</module>
+		<module>framework-common-gateway</module>
+		<module>framework-common-transaction</module>
+		<module>framework-common-sequence</module>
 	</modules>
 </project>
